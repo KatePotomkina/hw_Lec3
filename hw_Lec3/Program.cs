@@ -23,8 +23,7 @@ namespace hw_Lec3
             Enumerable.Range(0, 200)
                  .ToList()
                  .ForEach(i =>
-                     query1.Add(i <= 0 ? 0:
-                         i <= 1 ? 1 : query1[i - 2] + query1[i - 1])) ;
+                     query1.Add(i <= 0 ? 0: i <= 1 ? 1 : query1[i - 2] + query1[i - 1])) ;
             for (int k = 0; k < num; k++)
             {
                 Console.Write(query1[k].ToString()+" ");
